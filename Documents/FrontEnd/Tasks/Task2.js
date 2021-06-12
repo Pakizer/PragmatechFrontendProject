@@ -1,10 +1,9 @@
 //Dəyərin boş olub olmadığını yoxlayan metod yazın.
-let item = document.querySelector(".item");
+let n = prompt();
 
-let n = window.prompt("Enter anything")
-
-if (n == "" || n == " ") {
-    alert("enter anything!")
-} else {
-    item.innerHTML = n;
+if(n === "" || n === " "){
+  console.log("no value")
+}
+else if(n) {
+  console.log("have value")
 }
