@@ -66,5 +66,11 @@ sr.reveal('.skills__subtitle', {})
 sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
 sr.reveal('.skills__img', {delay: 400})
 
+/*SCROLL CONTACT*/
+sr.reveal('.contact__subtitle', {})
+sr.reveal('.contact__text', {interval: 200})
+sr.reveal('.contact__input', {delay: 400})
+sr.reveal('.contact__button', {delay: 600})
+
 
 
