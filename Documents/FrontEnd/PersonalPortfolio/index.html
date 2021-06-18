@@ -3,15 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <!-- Box icons -->
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="/PersonalPortfolio/css/styles.css">
+
+        <!-- ===== BOX ICONS ===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Personal Portfolio</title>
     </head>
     <body>
-        <!-- HEADER -->
+        <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
@@ -23,6 +25,7 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -37,36 +40,37 @@
             <!--===== HOME =====-->
             <section class="home" id="home">
                 <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>HEL</span> <br>LO.</h1>
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
 
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
 
-                    <img src="assets/img/pic.jpg" alt="" class="home__img">
+                    <img src="/PersonalPortfolio/img/myself.jpeg" alt="" class="home__img">
                 </div>
             </section>
             
-            <!-- ABOUT-->
+            <!--===== ABOUT =====-->
             <section class="about section" id="about">
                 <h2 class="section-title">About</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/pic.jpg" alt="">
+                        <img src="/PersonalPortfolio/img/myself.jpeg" alt="">
                     </div>
 
                     <div>
-                        <h2 class="about__subtitle">I'am Pakizar Masimli</h2>
-                        <h4 class="about__profession">Frontend Developer</h3>
-                        <p class="about__text"> My Education <br>BSc degree-Ganja State University in Mathematics and Informatics (2015-2020) <br> MSc degree-Baku Engineering University in Management in Information System (2020-2022). </p>
-
-                        <div class="about__social">
-                            <h4 class="about__text" style="color: #5361FF;"> You can follow me on theese sites</h4>
+                        <h3 class="about__subtitle">Pakizar Masimli</h3>
+                        <h4 class="about__profession">I'm Frontend Developer</h3>
+                        <p class="about__text">I'm 22 years old (24.08.1998) <br> I want to give information about my education.I am a graduate of Ganja State University Mathematics and Informatics (2015-2020) and I am studying MSc in Information Systems Management at Baku Engineering University(2020-2022) and Pragmatech Education and Development Center.<br> Are you looking for a Frontend Developer to build a responsive, stunning, and the user-friendly website from scratch or looking someone to redesign & develop your existing website, then you are in the right place! What you can think I can develop it for you!.<br>
+                        </p> 
+                         <div class="about__social">
+                            <h4 class="about__text" style="color: #5361FF ;"> You can follow me on theese sites</h4>
                             <a href="https://www.linkedin.com/in/pakizer-mesimli/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
                             <a href="https://github.com/Pakizer" class="about__social-icon"><i class='bx bxl-github' ></i></a>
                         </div>
                     </div>
+                    
                 </div>
             </section>
 
@@ -87,19 +91,33 @@
                         <span class="skills__name">Css</span>
                         <span class="skills__name">Javascript</span>
                         <span class="skills__name">Scss</span>
+                        <span class="skills__name">Python</span>
+                        <span class="skills__name">SqLite</span>
 
                         <h3 class="skills__subtitle">Design</h3>
                         <span class="skills__name">Figma</span>
-                        <span class="skills__name">Adobe XD</span> 
-                        
-                        
-                    </div>
+                        <span class="skills__name">Adobe XD</span>
 
                     <div class="skills__img">
-                        <img src="assets/img/skill.jpg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="Projects section" id="projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="Projects__container bd-grid">
+                    <div class="Projects__img">
+                        <img src="/PersonalPortfolio/img/work1.png" alt="">
+
+                        <div class="Projects__link">
+                            <a href="https://github.com/Pakizer/PragmatechFoundationProject.git" class="Projects__link-name">View details</a>
+                        </div>
+                    </div>
+            </section>
+
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
@@ -143,10 +161,12 @@
                     <ul>
                         <li><a href="#home" class="footer__link">Home</a></li>
                         <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>                      
+                        <li><a href="#skills" class="footer__link">Skills</a></li> 
+                        <li><a href="#projects" class="footer__link">Projects</a></li>                     
                         <li><a href="#Contact" class="footer__link">Contact</a></li>
                     </ul>
                 </div>
+                
                 
                 <div class="footer__data">
                     <h2 class="footer__title">FOLLOW</h2>
@@ -163,6 +183,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="/PersonalPortfolio/js/main.js"></script>
     </body>
-</html> 
+</html>
