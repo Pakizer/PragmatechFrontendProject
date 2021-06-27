@@ -25,3 +25,19 @@ students=[
 // soyadi Kerimov olan istifadecileri goster
 // adlari eyni olan istifadecileri goster
 // soyadlari eyni olan istifadecileri goster
+let result
+
+function studentFilteri(qayda){
+    arr=[]
+    for (i in students) {
+        if(qayda(students[i])){
+            arr.push(students[i])
+        }
+        result = student.filter((el) => student.filter(_el => _el.ad === el.ad).length > 1)
+
+        return arr
+    
+    }
+    
+    
+    let telebe = studentFilter(student => student.ad == 'Hesen')
