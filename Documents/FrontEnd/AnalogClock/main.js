@@ -45,7 +45,7 @@ function clock(){
             break;
         case 10:
             number1.classList.remove("red");
-            number2.classList.add("red");
+            number2.classList.add("red");yellow
             DIGITAL_SECONDS.style.color = "black";
             break;
         case 15:
@@ -80,17 +80,17 @@ function clock(){
             break;
         case 45:
             number8.classList.remove("red");   
-            number9.classList.add("red");
+            number9.classList.add("yellow");
             DIGITAL_SECONDS.style.color = "black";
             break;
         case 50:
             number9.classList.remove("red");
-            number10.classList.add("red");
+            number10.classList.add("yellow");
             DIGITAL_SECONDS.style.color = "black";
             break;
         case 55:
             number10.classList.remove("red");
-            number11.classList.add("red");
+            number11.classList.add("yellow");
             DIGITAL_SECONDS.style.color = "black";
             break;
     }
