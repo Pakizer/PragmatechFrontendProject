@@ -1,0 +1,25 @@
+body {
+  background: url(https://elements-cover-images-0.imgix.net/6fdd350e-4e88-4041-a803-a96f6449ac51?auto=compress%2Cformat&fit=max&w=900&s=cd99d926c73f83fe14ca3cb8cc165182);
+  background-size: cover;
+  background-position: center;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.fa-snowflake {
+  animation: fall linear forwards;
+  color: #fff;
+  position: absolute;
+  top: -20px;
+}
+
+/*Define animation */
+@keyframes fall {
+  to {
+    transform: translateY(120vh);
+  }
+}
