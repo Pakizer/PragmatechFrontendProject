@@ -1,0 +1,17 @@
+.body{
+    margin:0px;
+}
+
+.container{
+    width: 1200px;
+    display: grid;
+    gap: 20px;
+    margin: 0 auto;
+
+}
+
+.item{
+    height: 200px;
+    border: 1px solid gray;
+    background-color: rgb(134, 172, 201);
+}
