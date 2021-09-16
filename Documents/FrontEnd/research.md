@@ -123,7 +123,7 @@ console.log(bike1.getDetails());
 
 Yuxarıdakı nümunədə göründüyü kimi ES6-da obyektin təyin edilməsi və yenidən istifadəsi daha asandır. Buna görə bütün nümunələrimizdə ES6 istifadə edərdik.
 
-<!-- Abstraction -->
+<!-- Abstraction --
 
 Abstraksiya obyekt yönümlü proqramlaşdırma (OOP) dillərinin əsas anlayışlarından biridir. Əsas məqsədi istifadəçidən lazımsız detalları gizlədərək mürəkkəbliyi idarə etməkdir. Bu, istifadəçinin bütün gizli mürəkkəbliyi başa düşmədən və hətta düşünmədən təmin edilmiş soyutlamanın üstündə daha mürəkkəb bir məntiq tətbiq etməsini təmin edir.Abstraksiya , tətbiqetmə kontekstindən yeganə vacib xüsusiyyətləri özündə cəmləşdirən, daha mürəkkəb bir real varlığının sadə bir modelinin yaradılması yoludur.
 Abstraksiya daxili detalları gizlədərək bir neçə kiçik sistemdə düzəldərək bir sistemin mürəkkəbliyini idarə edir.
