@@ -1,0 +1,38 @@
+//Jsdəki addEventListener-in React-də qarşılığı nədir?//
+--window.addEventListener 
+
+import React from 'react';
+
+const App = (props) => {
+  window.addEventListener('keydown', (event) => {
+    // ...
+  });
+  return (
+    <div className='container'>
+      <h1>Welcome to the Keydown Listening Component</h1>
+    </div>
+  );
+};
+
+useEffect
+const App = (props) => {
+  React.useEffect(() => {
+    window.addEventListener('keydown', (event) => {
+      // ...
+    });
+  }, []);
+
+  return (
+    <div className='container'>
+      <h1>Welcome to the Keydown Listening Component</h1>
+    </div>
+  );
+};
+
+The function for removing an event listener is window.removeEventListener.
+
+
+
+
+//innerHTML və innerText propertilərinin React qarşılığı nədir?//
+--dangerouslySetInnerHTML
