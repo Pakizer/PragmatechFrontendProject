@@ -6,7 +6,11 @@ const About = () => {
   return (
     <div>
       About page
-      {<div className="p-4"> Bu yazı link üzrə yaranıb </div>}
+      {!(location.state == "") ? (
+        <div>Bu yazı SPA prinsipinə məxsus olmayan yollarla girilib</div>
+      ) : (
+        <div className="p-4"> Bu yazı link üzrə yaranıb </div>
+      )}
     </div>
   );
 };
