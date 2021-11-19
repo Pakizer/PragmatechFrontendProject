@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { addCustomer } from "../features/customerSlice";
 import { removeReservation } from "../features/reservationSlice";
-import { v4 as uuid } from "uuid";
+import { v4 as uuid } from "uuid"
 
 interface ReservationCardType {
   name: string;
