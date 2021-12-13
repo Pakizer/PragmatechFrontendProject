@@ -4,7 +4,7 @@ import FirebaseContext from "../context/firebase";
 import * as ROUTES from "../constants/routes";
 import { doesUsernameExist } from "../services/firebase";
 
-export default function SignUp() {
+function SignUp() {
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
 
@@ -138,3 +138,4 @@ export default function SignUp() {
     </div>
   );
 }
+export default SignUp;

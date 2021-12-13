@@ -1,11 +1,11 @@
 export function seedDatabase(firebase) {
   const users = [
     {
-      userId: "F9Ey9HjSAQM17ifBUruyjGDluP23",
-      userName: "pakizar",
+      userId: "Vblbz0V4RJTQmV3rHSYfYCsHgOD2",
+      username: "pakizar",
       fullName: "Pakizar Masimli",
       emailAddress: "pakizerrmesimli@gmail.com",
-      following: ["2"],
+      following: [""],
       followers: ["2", "3", "4"],
       dateCreated: Date.now(),
     },
@@ -15,7 +15,7 @@ export function seedDatabase(firebase) {
       fullName: "Aytac Azerli",
       emailAddress: "aytac@gmail.com",
       following: [],
-      followers: ["F9Ey9HjSAQM17ifBUruyjGDluP23"],
+      followers: ["Vblbz0V4RJTQmV3rHSYfYCsHgOD2"],
       dateCreated: Date.now(),
     },
     {
@@ -24,7 +24,7 @@ export function seedDatabase(firebase) {
       fullName: "Gulnar Musayeva",
       emailAddress: "gulnar@gmail.com",
       following: [],
-      followers: ["F9Ey9HjSAQM17ifBUruyjGDluP23"],
+      followers: ["Vblbz0V4RJTQmV3rHSYfYCsHgOD2"],
       dateCreated: Date.now(),
     },
     {
@@ -33,7 +33,7 @@ export function seedDatabase(firebase) {
       fullName: "Ruqeyya Qasimli",
       emailAddress: "ruqeyya@gmail.com",
       following: [],
-      followers: ["F9Ey9HjSAQM17ifBUruyjGDluP23"],
+      followers: ["Vblbz0V4RJTQmV3rHSYfYCsHgOD2"],
       dateCreated: Date.now(),
     },
   ];
@@ -41,7 +41,6 @@ export function seedDatabase(firebase) {
     firebase.firestore().collection("users").add(users[k]);
   }
 
-  // eslint-disable-next-line prefer-const
   for (let i = 1; i <= 5; ++i) {
     firebase
       .firestore()
@@ -49,16 +48,16 @@ export function seedDatabase(firebase) {
       .add({
         photoId: i,
         userId: "2",
-        imageSrc: `/images/users/img/${i}.jpg`,
+        imageSrc: `/images/users/raphael/${i}.jpg`,
         caption: "Saint George and the Dragon",
         likes: [],
         comments: [
           {
-            displayName: "gulnar",
+            displayName: "dali",
             comment: "Love this place, looks like my animal farm!",
           },
           {
-            displayName: "ruqeyya",
+            displayName: "orwell",
             comment: "Would you mind if I used this picture?",
           },
         ],

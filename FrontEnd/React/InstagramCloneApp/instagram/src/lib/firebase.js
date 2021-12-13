@@ -1,11 +1,9 @@
-import Firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import "firebase/compat/firestore";
-
-import { seedDatabase } from "../seed";
+import Firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
 
 const config = {
-  appiKey: "AIzaSyBp4P5snWUh-06R47Qta0Vup3ofA2VBj80",
+  apiKey: "AIzaSyBp4P5snWUh-06R47Qta0Vup3ofA2VBj80",
   authDomain: "instagram-cfae7.firebaseapp.com",
   projectId: "instagram-cfae7",
   storageBucket: "instagram-cfae7.appspot.com",
@@ -16,7 +14,5 @@ const config = {
 
 const firebase = Firebase.initializeApp(config);
 const { FieldValue } = Firebase.firestore;
-
-seedDatabase(firebase);
 
 export { firebase, FieldValue };
