@@ -16,8 +16,8 @@ const User = ({ username, fullName }) =>
       </div>
 
       <div className="col-span-3">
-        <p className="text-sm">User </p>
-        <p className="text-sm">{fullName}</p>
+        <p className="text-sm font-bold">{username} </p>
+        <p className="text-sm font-bold">{fullName}</p>
       </div>
     </Link>
   );

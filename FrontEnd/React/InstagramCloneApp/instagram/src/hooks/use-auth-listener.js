@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import FirebaseContext from "../context/firebase";
+import { getUserByUserId } from "../services/firebase";
 
 export default function useAuthListener() {
   const [user, setUser] = useState(
@@ -8,10 +9,11 @@ export default function useAuthListener() {
   const { firebase } = useContext(FirebaseContext);
 
   useEffect(() => {
-    const listener = firebase.auth().onAuthStateChanged((authUser) => {
+    const listener = firebase.auth().onAuthStateChanged(async (authUser) => {
       if (authUser) {
-        localStorage.setItem("authUser", JSON.stringify(authUser));
-        setUser(authUser);
+        const userA = await getUserByUserId(authUser.uid);
+        localStorage.setItem("authUser", JSON.stringify(userA[0]));
+        setUser(userA[0]);
       } else {
         localStorage.removeItem("authUser");
         setUser(null);
